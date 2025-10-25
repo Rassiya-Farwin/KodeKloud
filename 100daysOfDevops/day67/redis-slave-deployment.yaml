@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-slave
+  labels:
+    app: redis
+    role: slave
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: redis
+      role: slave
+  template:
+    metadata:
+      labels: 
+        app: redis
+        role: slave
+    spec:
+      containers:
+      - name: slave-redis-datacenter
+        image: gcr.io/google_samples/gb-redisslave:v3
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
+        ports:
+        - containerPort: 6379
+        env:
+        - name: GET_HOSTS_FROM
+          value: dns
