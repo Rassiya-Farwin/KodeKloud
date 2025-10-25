@@ -1,0 +1,6 @@
+start the Jenkins service 
+  sudo systemctl start jenkins
+check the status of the Jenkins
+  sudo systemctl status jenkins
+Retrieve Initial Password
+  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
