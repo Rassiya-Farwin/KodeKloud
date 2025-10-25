@@ -5,7 +5,7 @@ The DevOps team at xFusionCorp Industries is initiating the setup of CI/CD pipel
 1. Install Jenkins on the jenkins server using the yum utility only, and start its service.
 
 If you face a timeout issue while starting the Jenkins service, refer to this.
-2. Jenkin's admin user name should be theadmin, password should be Adm!n321, full name should be Yousuf and email should be yousuf@jenkins.stratos.xfusioncorp.com.
+2. Jenkin's admin user name should be theadmin, password should be Adm!n321, full name should be Ammar and email should be ammar@jenkins.stratos.xfusioncorp.com.
 
 
 Note:
