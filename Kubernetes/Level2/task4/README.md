@@ -5,3 +5,4 @@ Now upgrade the deployment to version httpd:2.4.43 using a rolling update.
 
 
 Finally, once all pods are updated undo the recent update and roll back to the previous/original version.
+<img width="980" height="321" alt="image" src="https://github.com/user-attachments/assets/b2ad9e6f-411e-4bef-b7c8-331a252bbde5" />
