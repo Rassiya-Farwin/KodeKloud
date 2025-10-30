@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpd-deploy
-  namespace: xfusion
+  namespace: datacenter
   labels:
     app: httpd
 spec:
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -22,4 +22,4 @@ spec:
     spec:
       containers:
         - name: httpd
-          image: httpd:2.4.28
+          image: httpd:2.4.27
